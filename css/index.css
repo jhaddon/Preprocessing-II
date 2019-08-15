@@ -170,8 +170,7 @@ img {
 }
 .header {
   width: 100%;
-  border-bottom: 2px dashed #C0C0C0;
-  padding: 25px 0px;
+  padding: 25px 0px 0px 0px;
 }
 a {
   color: black;
@@ -204,6 +203,10 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+.home .content-section .funbus {
+  border-top: 2px dashed #C0C0C0;
+  margin: 0px 0px 20px 0px;
 }
 .home .content-section .text-content {
   width: 48%;
