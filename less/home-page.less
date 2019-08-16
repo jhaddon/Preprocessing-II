@@ -61,24 +61,26 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile {
+      flex-direction: column;
+      padding: 10px 0px 0px 10px;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      flex-direction: column;
+      @media @mobile {
+        width: 100%;
+      }
     }
   }
-
-  // .btn {
-  //   background: #0C7D71;
-  //   padding: 20px;
-  //   margin: 20px;
-  //   border-radius: 15px;
-  //   text-align: center;
-  //   color: @white;
-  //   font-size: 1.5rem;
-  // }
 
   .btn{
     .custom-btn(#0C7D71, @white, 1.5rem)
   }
-}// home
+}
+
+
+
+// home

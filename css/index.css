@@ -187,9 +187,10 @@ a {
   display: flex;
   align-items: center;
 }
-@media only screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .header {
     display: flex;
+    flex-direction: column;
     text-align: center;
     flex-wrap: wrap;
     justify-content: center;
@@ -199,6 +200,7 @@ a {
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
+    flex-direction: column;
   }
 }
 .footer {
@@ -262,9 +264,21 @@ a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    padding: 10px 0px 0px 10px;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+  flex-direction: column;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 100%;
+  }
 }
 .home .btn {
   background: #0C7D71;
